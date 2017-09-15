@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// function table(num){
+		// 	document.write('<table border=1 cellspacing=0>')
+		// 	for(let i=0;i<num;i++){
+		// 		document.write('<tr>')
+		// 		for(let j=0;j<i;j++){
+		// 			document.write('<td>'+j+'*'+i+'</td>')
+		// 		}
+		// 		document.write('</tr>')
+		// 	}
+		// 	document.write('</table>')
+		// }
+		// table(10)
+		function table(num){
+			let table='<table border=1 cellspacing=0>';
+			for(let i=0;i<num;i++){
+				table+='<tr><br>';
+				for(let j=0;j<num;j++){
+					table+='<tr>1</tr>';
+				}
+				table+='</tr>';
+			}
+			table+='</table>';
+			return table;
+		}
+		document.write(table(10));
+	</script>
+</body>
+</html>
